@@ -1,0 +1,321 @@
+/* CSS Variables */
+/* Google font link*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+
+/*root variable*/
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  font-family: 'Montserrat';
+}
+
+
+/******************************** CSS for Entire HTML Tag ********************************************/
+html {
+  box-sizing: border-box;
+  color: var(--dark);
+  scroll-behavior: smooth;
+  font-family: 'Montserrat';
+}
+
+/************************ Setting fixed backgrounf and light for entire body of my html *****************/
+body {
+  background: #000000;
+  
+  line-height: 1.4;
+}
+
+
+/************************** CSS for Entire Navigation Bar *******************************************/
+.header{
+
+    background-color: #000;
+    padding: 0px;
+}
+
+.top-container, .boxes{
+  margin: 10px 20px;
+}
+.header .navbar .navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header .navbar #collapsibleNavbar .nav-item .nav-link{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: .8;
+    padding: 10px;
+}
+
+#humbergertop{
+    font-size: 30px;
+    color: white;
+}
+
+
+.header .navbar #collapsibleNavbar .nav-item .nav-link:hover{
+    background-color: red;
+    border-radius: 10px;
+
+}
+
+.navbar-brand img{
+    width: 135px;
+    height: auto;
+}
+
+/********************* Media Query so as to make navabar Responsive *******************************/
+@media only screen and (max-width: 768px){
+
+    .navbar-brand img{
+    width: 82px;
+    
+}
+
+}
+
+/******************************* End of Navigation CSS ******************************/
+
+
+/************* CSS for the watch And buy button ************************/
+.btn {
+  /*background: var(--dark);*/
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  background-color: #dd003f;
+}
+
+.btn:hover{
+    background-color: #985ed1;
+    color: #fff;
+    transition: all ease 0.6s;
+    box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+    text-decoration: none;
+}
+
+.btn-movies{
+    margin-top: 120px;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+/*************** Diplaying the wrapper of the body as Grid ****************************/
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+
+/************ CSS Top Container containing movie showcase area and creating grid **********************/
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+
+/******************** Showcase Area with background Image  ********************/
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(./img/watch.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  font-family: 'Montserrat';
+}
+/******************* Adding Hover effect to my showcase area ******************/
+.showcase:hover{
+   transform: translateY(-20px);
+  transition: all ease 0.6s;
+   box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+}
+.showcase h1{
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--light);
+  font-family: 'Montserrat';
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: #fff;
+  font-family: 'Montserrat';
+}
+
+/********************* Css style for subscription boxes  ************************/
+.top-box {
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.top-box-a h4{
+  color: #fff;
+}
+
+.top-box-b h4{
+  color: #fff;
+}
+.top-box-a {
+  grid-area: top-box-a;
+  border-radius: 10px;
+  background-color: #8c1aff;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+  border-radius: 10px;
+  background-color: #8c1aff;
+}
+/************************************ Hover Effect For Both Box A and B ******************************/
+.top-box-a:hover{
+  transform: translateY(-10px);
+  transition: all ease 0.6s;
+   box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+}
+.top-box-b:hover{
+  transform: translateY(-10px);
+  transition: all ease 0.5s;
+   box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+}
+
+/*********************** Css for watch.html page *******************/
+.show-movie{
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(./img/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  color: #fff;
+}
+/********************* End of css for watch.html *****************/
+.top-box-a .movie-info ul {
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    font-family:'Montserrat';
+    font-size: 20px; 
+}
+
+/************** End Of Top Container containing subsription boxes and showcase area ****************/
+
+/*************************** CSS for Movies Section **********************************/
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  min-height: 700px;
+
+  }
+
+  .box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.6s;
+    box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+  }
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.info {
+  background: #8c1aff;  ;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px;
+  color: #fff;
+}
+
+/****************************** End of Movies section CSS *********************************/
+
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 0px;
+}
+
+/************************** Media Queries for diplaying grids as reponsive **********************/
+@media (max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      'showcase showcase'
+      'top-box-a top-box-b';
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b';
+  }
+}
+
+/************************** Css Style ends ! Thank You ! *****************************/
+

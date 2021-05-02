@@ -1,0 +1,12 @@
+Refrences that helped to create my website
+
+[1]https://www.w3schools.com/css/css_grid.asp(For grid)
+[2]https://www.w3schools.com/css/css3_buttons.asp(For button designs)
+[3]https://www.youtube.com/watch?v=jV8B24rSN5o&t=687s(for grid)
+[4]https://www.w3schools.com/cssref/css3_pr_mediaquery.asp(media queries for making website responsive)
+[5]https://fontawesome.com/(for icon purpose)
+[6]https://www.youtube.com/watch?v=68O6eOGAGqA&t=400s(for grid)
+[7]https://fonts.google.com/?preview.text=&preview.text_type=custom(for importing various google fonts)
+[8]https://www.w3schools.com/css/css3_transitions.asp(apply css tranisition buttons and various grid layout)
+[9]https://www.youtube.com/watch?v=IxoBaeOihq4&t=232s(idea for desining the website)
+[10]https://themoviesflix.cc/ (idea for designing website)
